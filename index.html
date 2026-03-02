@@ -3,93 +3,172 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio - KELLA SINGDANNE</title>
+<title>Portfolio - Kella SINGDANNE</title>
 <link rel="stylesheet" href="style.css">
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- Hero / Accueil -->
-<header class="hero">
-    <div class="hero-header">
-        <h1><i class="fas fa-laptop"></i> KELLA SINGDANNE</h1>
-        <p>Passionné par l'informatique, la cybersécurité et la résolution de problèmes IT.</p>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="nav-container">
+        <a href="#hero" class="nav-logo"><i class="fas fa-laptop"></i> SK</a>
+        <ul class="nav-menu">
+            <li><a href="#hero" class="nav-link">Accueil</a></li>
+            <li><a href="#about" class="nav-link">À propos</a></li>
+            <li><a href="#skills" class="nav-link">Compétences</a></li>
+            <li><a href="#projects" class="nav-link">Projets</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
     </div>
-    <div class="hero-buttons">
-        <a href="#contact" class="btn">Me contacter</a>
-        <a href="cv.pdf" class="btn" download>Télécharger CV</a>
-    </div>
-</header>
-
-<!-- Navigation flottante -->
-<nav>
-    <ul>
-        <li><a href="#about"><i class="fas fa-user"></i> À propos</a></li>
-        <li><a href="#skills"><i class="fas fa-laptop-code"></i> Compétences</a></li>
-        <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projets</a></li>
-        <li><a href="#experience"><i class="fas fa-briefcase"></i> Expérience</a></li>
-        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-    </ul>
 </nav>
 
+<!-- Hero Section -->
+<section id="hero" class="hero">
+    <div class="hero-content">
+        <h1>KELLA SINGDANNE</h1>
+        <p>IT Specialist & Cybersecurity Expert</p>
+        <p class="hero-subtitle">Passionné par l'informatique, la cybersécurité et la résolution de problèmes IT.</p>
+        <div class="hero-buttons">
+            <a href="#contact" class="btn btn-primary">Me contacter</a>
+            <a href="cv.pdf" class="btn btn-secondary" download>Télécharger CV</a>
+        </div>
+    </div>
+</section>
+
 <!-- À propos -->
-<section id="about" class="card">
-    <h2><i class="fas fa-user"></i> À propos de moi</h2>
-    <p>Je suis un étudiant tchadien passionné par l'informatique et la cybersécurité. Titulaire d'un Bac D, j'ai suivi une formation en CompTIA Security+ et obtenu mon IELTS. Je crée des sites web, configure des réseaux et résous des problèmes IT.</p>
+<section id="about" class="section">
+    <div class="container">
+        <h2 class="section-title">À propos de moi</h2>
+        <div class="about-content">
+            <p>Je suis un étudiant tchadien passionné par l'informatique et la cybersécurité. Titulaire d'un Bac D, j'ai suivi une formation en <strong>CompTIA Security+</strong> et obtenu mon <strong>IELTS</strong>.</p>
+            <p>Je suis spécialisé dans la création de sites web, la configuration de réseaux, la résolution de problèmes IT et l'optimisation des systèmes informatiques.</p>
+        </div>
+    </div>
 </section>
 
 <!-- Compétences -->
-<section id="skills" class="card">
-    <h2><i class="fas fa-laptop-code"></i> Compétences Techniques</h2>
-    <ul>
-        <li>HTML, CSS, Python, C</li>
-        <li>Maintenance informatique & réseaux</li>
-        <li>Cybersécurité (CompTIA Security+)</li>
-        <li>Installation et configuration de réseaux</li>
-        <li>Microsoft Office</li>
-    </ul>
-</section>
-
-<!-- Projets -->
-<section id="projects" class="card">
-    <h2><i class="fas fa-project-diagram"></i> Projets</h2>
-    <div class="project-grid">
-        <div class="project-card">
-            <img src="images/projet1.png" alt="Projet 1">
-            <h3>Site Web Personnel</h3>
-        </div>
-        <div class="project-card">
-            <img src="images/projet2.png" alt="Projet 2">
-            <h3>Installation Réseau</h3>
-        </div>
-        <div class="project-card">
-            <img src="images/projet3.png" alt="Projet 3">
-            <h3>Projet Scolaire</h3>
+<section id="skills" class="section alt">
+    <div class="container">
+        <h2 class="section-title">Compétences Techniques</h2>
+        <div class="skills-grid">
+            <div class="skill-item">
+                <i class="fas fa-code"></i>
+                <h3>Frontend</h3>
+                <p>HTML5, CSS3, JavaScript</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-python"></i>
+                <h3>Programmation</h3>
+                <p>Python, C, JavaScript</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Cybersécurité</h3>
+                <p>CompTIA Security+</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-network-wired"></i>
+                <h3>Réseaux</h3>
+                <p>Configuration, Installation</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-tools"></i>
+                <h3>Maintenance IT</h3>
+                <p>Support, Troubleshooting</p>
+            </div>
+            <div class="skill-item">
+                <i class="fas fa-file-word"></i>
+                <h3>Bureautique</h3>
+                <p>Microsoft Office</p>
+            </div>
         </div>
     </div>
 </section>
 
-<!-- Expériences -->
-<section id="experience" class="card">
-    <h2><i class="fas fa-briefcase"></i> Expériences</h2>
-    <ul>
-        <li>Bénévolat dans un cybercafé</li>
-        <li>Stage en cybersécurité (CompTIA Security+)</li>
-    </ul>
+<!-- Projets -->
+<section id="projects" class="section">
+    <div class="container">
+        <h2 class="section-title">Projets</h2>
+        <div class="projects-grid">
+            <div class="project-item">
+                <div class="project-img">
+                    <img src="images/projet1.png" alt="Site Web Personnel">
+                </div>
+                <div class="project-info">
+                    <h3>Site Web Personnel</h3>
+                    <p>Portfolio professionnel avec HTML, CSS et JavaScript</p>
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-img">
+                    <img src="images/projet2.png" alt="Installation Réseau">
+                </div>
+                <div class="project-info">
+                    <h3>Installation Réseau</h3>
+                    <p>Configuration et installation d'infrastructure réseau professionnelle</p>
+                    <div class="project-tags">
+                        <span>Réseaux</span>
+                        <span>Configuration</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-item">
+                <div class="project-img">
+                    <img src="images/projet3.png" alt="Projet Scolaire">
+                </div>
+                <div class="project-info">
+                    <h3>Projet Scolaire</h3>
+                    <p>Projet académique en informatique et développement</p>
+                    <div class="project-tags">
+                        <span>Académique</span>
+                        <span>Développement</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
 <!-- Contact -->
-<section id="contact" class="card">
-    <h2><i class="fas fa-envelope"></i> Contact</h2>
-    <p>Email : <a href="mailto:kella.ctrl@gmail.com">kella.ctrl@gmail.com</a></p>
-    <p>Téléphone : +2348168090272 </p>
-    <p>LinkedIn : <a href="https://www.linkedin.com/in/tonprofil" target="_blank">Mon LinkedIn</a></p>
-    <p>GitHub : <a href="https://github.com/Kella-hub" target="_blank">Mon GitHub</a></p>
+<section id="contact" class="section alt">
+    <div class="container">
+        <h2 class="section-title">Contactez-moi</h2>
+        <div class="contact-content">
+            <p>Je suis ouvert aux opportunités et aux nouvelles expériences.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:kella.ctrl@gmail.com">kella.ctrl@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+2348168090272</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <a href="https://www.linkedin.com/in/tonprofil" target="_blank">LinkedIn</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/Kella-hub" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
 
-<footer>
-    <p>&copy; 2026 Kella</p>
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2026 Kella. Tous droits réservés.</p>
 </footer>
 
 <script src="script.js"></script>
