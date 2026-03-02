@@ -56,4 +56,4 @@ window.addEventListener('scroll', () => {
 });
 
 console.log('%c👋 Bienvenue sur le portfolio de Kella!', 'color: #00a884; font-size: 16px; font-weight: bold;');
-console.log('%cPour plus d'informations: tonemail@gmail.com', 'color: #007d68; font-size: 12px;');
+console.log('%cPour plus d'informations: kella.ctrl@gmail.com', 'color: #007d68; font-size: 12px;');
