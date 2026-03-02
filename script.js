@@ -27,7 +27,7 @@ const observer = new IntersectionObserver(function(entries) {
     });
 }, observerOptions);
 
-document.querySelectorAll('.card, .project-card').forEach(element => {
+document.querySelectorAll('.section, .project-item').forEach(element => {
     element.style.opacity = '0';
     element.style.transform = 'translateY(20px)';
     element.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
@@ -46,14 +46,13 @@ window.addEventListener('scroll', () => {
         }
     });
 
-    document.querySelectorAll('nav a').forEach(link => {
+    document.querySelectorAll('.nav-link').forEach(link => {
         link.classList.remove('active');
         if (link.getAttribute('href').slice(1) === current) {
-            link.style.backgroundColor = '#00a884';
-            link.style.color = 'white';
+            link.style.color = '#00a884';
         }
     });
 });
 
 console.log('%c👋 Bienvenue sur le portfolio de Kella!', 'color: #00a884; font-size: 16px; font-weight: bold;');
-console.log('%cPour plus d'informations: kella.ctrl@gmail.com', 'color: #007d68; font-size: 12px;');
+console.log('%cPour plus d\'informations: tonemail@gmail.com', 'color: #666; font-size: 12px;');
